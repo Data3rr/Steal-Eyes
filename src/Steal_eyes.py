@@ -480,7 +480,3 @@ if __name__ == "__main__":
     rich_presence()
     init()
     main()
-    
-        
-
-   
