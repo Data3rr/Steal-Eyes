@@ -20,7 +20,7 @@ def rich_presence():
             large_text = f"Steal Eyes",
             details = f"Grabber & RAT remover",
             state = "by 0xSpoofed",
-            buttons=[{"label": "Github", "url": "https://github.com/0xSpoofed/nourl"}]
+            buttons=[{"label": "Github", "url": "https://github.com/0xSpoofed/Steal-Eyes"}]
         )
     except Exception as e:
         pass
