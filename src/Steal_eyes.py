@@ -1,4 +1,4 @@
-#<---       Steal Eyes | Grabber & RAT remover by 0xSp00f3d      --->
+#<---       Steal Eyes | Grabber & RAT remover by Adapters      --->
 #<---                         python 3.x                         --->
 #<---           Only for educationnal / good purposes            --->
 
@@ -19,8 +19,8 @@ def rich_presence():
             large_image= "icon",
             large_text = f"Steal Eyes",
             details = f"Grabber & RAT remover",
-            state = "by 0xSpoofed",
-            buttons=[{"label": "Github", "url": "https://github.com/0xSpoofed/Steal-Eyes"}]
+            state = "by Adapters",
+            buttons=[{"label": "Github", "url": "https://github.com/Data3rr/Steal-Eyes"}]
         )
     except Exception as e:
         pass
@@ -102,20 +102,22 @@ def checkinject():
                                             for file in subsubfiles:
                                                 if file == 'index.js':
                                                     jsfile_path = os.path.join(subsubsubdir, file)
-            jsfile_content = readfile(jsfile_path)
-            if jsfile_content.strip() != """module.exports = require('./core.asar');""":
-                current_hit.append(version)
-                current_hit.append(os.path.basename(jsfile_path))
-                current_hit.append(jsfile_path)
-                current_hit.append(checkfile(jsfile_path))
-                webhook = findall(r'(https?):\/\/((?:ptb\.|canary\.)?discord(?:app)?\.com)\/api(?:\/)?(v\d{1,2})?\/webhooks\/(\d{17,19})\/([\w\-]{68})', jsfile_content)
-                if webhook != []:
-                    if webhook not in current_hit:
-                        current_hit.append(f"{webhook[0][0]}://{webhook[0][1]}/{webhook[0][3]}/{webhook[0][4]}")
-                    else: pass
-                else: current_hit.append('None')
-                hits.append(current_hit)
-    
+                                                else: pass
+            if jsfile_path:
+                jsfile_content = readfile(jsfile_path)
+                if jsfile_content.strip() != """module.exports = require('./core.asar');""":
+                    current_hit.append(version)
+                    current_hit.append(os.path.basename(jsfile_path))
+                    current_hit.append(jsfile_path)
+                    current_hit.append(checkfile(jsfile_path))
+                    webhook = findall(r'(https?):\/\/((?:ptb\.|canary\.)?discord(?:app)?\.com)\/api(?:\/)?(v\d{1,2})?\/webhooks\/(\d{17,19})\/([\w\-]{68})', jsfile_content)
+                    if webhook != []:
+                        if webhook not in current_hit:
+                            current_hit.append(f"{webhook[0][0]}://{webhook[0][1]}/{webhook[0][3]}/{webhook[0][4]}")
+                        else: pass
+                    else: current_hit.append('None')
+                    hits.append(current_hit)
+            else: pass
     if hits == []: hits.append('None')
     
     return hits
