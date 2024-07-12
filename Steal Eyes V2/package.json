@@ -1,0 +1,15 @@
+{
+  "name": "Steal eyes v2",
+  "version": "2.0",
+  "description": "Opensource cleaner",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adapters",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "electron": "^23.1.3"
+  }
+}

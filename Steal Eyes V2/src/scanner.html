@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style/style_scanner.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Steal Eyes V2</title>
+  </head>
+  
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <div class="logo-menu">
+            <h2 class="logo">Steal Eyes V2</h2>
+            <i class="bx bx-menu toggle-btn"></i>
+        </div>
+        <ul class="list">
+            <li class="list-item">
+                <a href="index.html">
+                    <i class="bx bx-grid-alt"></i>
+                    <span class="link_name" style="--i:1">Dashboard</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="cleaner.html">
+                    <i class="bx bx-wind"></i>
+                    <span class="link_name" style="--i:2">Cleaner</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="remover.html">
+                    <i class='bx bx-injection bx-flip-horizontal' ></i>
+                    <span class="link_name" style="--i:3">Grabber remover</span>
+                </a>
+            </li>
+            <li class="list-item active">
+                <a href="scanner.html">
+                    <i class='bx bx-search-alt bx-flip-horizontal bx-flashing' ></i>
+                    <span class="link_name" style="--i:4">File scanner</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="about.html">
+                    <i class='bx bx-info-circle'></i>
+                    <span class="link_name" style="--i:5">About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="maintitle">
+            <h1><i class='bx bx-search-alt bx-flip-horizontal'></i> File analyser</h1>
+        </div>
+        
+        <div class="stats-container">
+            <h2 id="selectedfileName"><i class='bx bx-error-circle' ></i> No file selected</h2>
+            <div class="stat">
+                <span class="label"><i class='bx bx-message-rounded-error' ></i> Risk rating:</span>
+                <span class="value" id="riskRating">Unknown ✖️</span>
+            </div>
+            <div class="stat">
+                <span class="label"><i class='bx bx-error' ></i> Hits:</span>
+                <span class="value" id="hitsNumber">Unknown ✖️</span>
+            </div>
+        </div>
+        
+        <label for="input-file" class="selectButton">
+            Select your file here  <i class='bx bx-file-find' ></i>
+        </label>
+
+    </div>
+    <script src="scripts/script_scanner.js"></script>
+  </body>
+</html>
