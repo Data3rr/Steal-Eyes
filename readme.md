@@ -1,52 +1,55 @@
-![Logo](https://imgur.com/gJTM6Tg.png)
+![Logo](https://i.imgur.com/A9miG2j.png)
 
 
 # Steal Eyes
 
-Steal Eyes is a persistent rat and stealer detector using keyword research and directory analysis coded with Python
+Steal Eyes v2 is a tool for suppressing permanent discord injections. This version is an enhanced version of Steal Eyes V1, allowing the tool to be used through a simple graphical interface, without the need to install python or anything else. This tool removes permanent injections on discord and cleans up startup elements. This tool coded by Adapters is for educational and legal purposes only. Please don't SKID/PASTA it like you did with the previous version...
 
 ## Features
 
 - **Detect persistent discord injection**
 - **Retrieve webhooks**
-- **Scan one file**
-- **Scan one folder**
+- **Scan a file**
 - **Clean temp files**
-- **Easy to use**
-- **Quick use**
+- **Easy to use with GUI**
 
+## Preview
+![img](https://i.imgur.com/NfApt5Y.png)
 ## Requirements
 - **Windows 10/11** OS only (*win32, for x86, x86_64, and arm64 architectures*)
-- **Python 3.x** (*python 3.9 used for the project.*)
-- **Modules:** (*colorama, pypresence*)
+- **NodeJS** installed (*npm*)
 
 ## Usage
 ### 1. First step
 
-Start by installing the modules by running the command `pip install -r requirements.txt`
+- Start by installing electronjs using the command :
+```console
+npm install --save-dev electron
+```
 
-*↦Troubleshooting: If an error occurs, check that you are using a version of python equal or lower than 3.9.x as this may cause errors or use `pip pip install --upgrade pip`*
+*↦Troubleshooting: Run it in the same folder as src, main.js and package.json`*
 
 ### 2. Second step
 
-Now run the program with python by clicking on it or by using the command :
+- Run the application by executing the command: 
 ```console
-python Steal_eyes.py
+npm start
 ```
-*↦Troubleshooting: Check that the modules are installed correctly, that you are using the right operating system and that your python works properly*
+*↦Troubleshooting: Run it in the same folder as src, main.js and package.json`*
 
 ### 3. Last step
 
-1) Select Choose the number you want to change the setting you want and follow the instructions: 
+- Let yourself be guided by the graphical interface and enjoy
 
-![img](https://imgur.com/qd2AsaI.png)
+
 
 
 ## Need you more help ??
-- If you are infected, you can send a message on discord to ***5o5o5o*** or open an issue for help
+- If you are infected, you can send a message on discord to ***Adapters*** or open an issue for help
 
 ## Disclaimer
 - Only for **educationnal, personal or good puposes**.
 - We **decline any responsability** in case of misuse of this code.
+- Please don't **SKID/PASTA** 
 
 
