@@ -3,7 +3,7 @@
 
 # Steal Eyes
 
-Steal Eyes v2 is a tool for suppressing permanent discord injections. This version is an enhanced version of Steal Eyes V1, allowing the tool to be used through a simple graphical interface, without the need to install python or anything else. This tool removes permanent injections on discord and cleans up startup elements. This tool coded by Adapters is for educational and legal purposes only. Please don't SKID/PASTA it like you did with the previous version...
+Steal Eyes v2 is a tool for removing permanent injections into discord, as well as for cleaning. This version is an enhanced version of Steal Eyes V1, allowing the tool to be used through a simple graphical interface, without the need to install python or anything else. This tool removes permanent injections on discord and cleans up startup elements. This tool coded by Adapters is for educational and legal purposes only. Please don't SKID/PASTA it like you did with the previous version...
 
 ## Features
 
